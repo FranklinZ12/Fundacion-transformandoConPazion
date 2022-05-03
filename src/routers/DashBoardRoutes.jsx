@@ -5,6 +5,7 @@ import HomeScreen from "../pages/HomeScreen";
 import AboutScreen from "../pages/AboutScreen";
 import ContactScreen from "../pages/ContactScreen";
 import ProcessScreen from "../pages/ProcessScreen";
+import Footer from "components/Footer";
 const DashBoardRoutes = () => {
   return (
       <Fragment>
@@ -18,6 +19,7 @@ const DashBoardRoutes = () => {
                   <Route path="contacto" element={<ContactScreen />} />
               </Routes>
           </div>
+          <Footer />
           {/* <ByMy /> */}
       </Fragment>
   )
