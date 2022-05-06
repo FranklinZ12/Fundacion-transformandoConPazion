@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from "react";
 const NavbarResponsive = () => {
     const [open, setOpen] = useState(false);
     const wrapperRef = useRef(null);
-    
+
     useEffect(() => {
         function handleClickOutside(event) {
             if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
@@ -15,7 +15,7 @@ const NavbarResponsive = () => {
         }
         document.addEventListener("mousedown", handleClickOutside);
     }, [])
-    
+
     return (
         <div className="navbar-start justify-between">
             <div className="dropdown" ref={wrapperRef}>
@@ -34,7 +34,7 @@ const NavbarResponsive = () => {
                     }
                 </label>
                 {open &&
-                    <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabIndex="0" className="menu menu-compact dropdown-content  mt-3 p-2 shadow bg-base-100 rounded-box w-48">
                         <LinkList url='/' title='INICIO' />
                         <li tabIndex="0">
                             <NavLink to='/nosotros/organizacion/'
@@ -43,7 +43,7 @@ const NavbarResponsive = () => {
                                 NOSOTROS
                                 <i className="fa-solid fa-angle-right w-6 h-6 text-base" />
                             </NavLink>
-                            <ul className="p-2">
+                            <ul className="p-1">
                                 <LinkList url='nosotros/organizacion/' title='Nuestra Organizacion' />
                                 <LinkList url='nosotros/equipo/' title='Nuestro equipo' />
                                 <LinkList url='nosotros/voluntario-y-donacion/' title='Voluntario y donacion' />
@@ -56,7 +56,7 @@ const NavbarResponsive = () => {
                                 PROCESOS
                                 <i className="fa-solid fa-angle-right w-6 h-6 text-base" />
                             </NavLink>
-                            <ul className="p-2">
+                            <ul className="p-1">
                                 <LinkList url='/procesos/todos/' title='Nuestros Procesos' />
                                 <LinkList url='procesos/medellin-barrista/' title='Medellin Barrista' />
                                 <LinkList url='procesos/club-deportivo-tcp/' title='Club deportivo TCP' />

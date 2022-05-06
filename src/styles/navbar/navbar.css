@@ -3,7 +3,7 @@
 }
 
 .brand{
-    @apply absolute h-full w-1/5 left-0 bottom-0 bg-[#872075] z-[1] rounded-r-[100px]
+    @apply absolute h-full w-1/5 left-0 bottom-0 shadow-[6px_0_15px_-2px_#888] z-[1] rounded-r-[100px]
     px-12  items-center justify-center;
 }
 
