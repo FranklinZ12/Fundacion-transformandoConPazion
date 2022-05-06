@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar/Navbar";
 import HomeScreen from "../pages/HomeScreen";
 import AboutScreen from "../pages/about/AboutScreen";
 import ContactScreen from "../pages/ContactScreen";
@@ -18,6 +18,7 @@ import ProcessAga from "pages/process/ProcessAga";
 import ProcessNaturalWoman from "pages/process/ProcessNaturalWoman";
 import ProcessCronicas from "pages/process/ProcessCronicas";
 import LoginScreen from "pages/auth/LoginScreen";
+
 const DashBoardRoutes = () => {
     return (
         <Fragment>
