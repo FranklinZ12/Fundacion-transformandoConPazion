@@ -1,4 +1,4 @@
-import { NavLink, Outlet} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 const LinkList = ({url, title, icon}) => {
   return (
@@ -8,7 +8,6 @@ const LinkList = ({url, title, icon}) => {
           >
               {title}
               <i className={icon} />
-              <Outlet />
           </NavLink>
       </li>
   )

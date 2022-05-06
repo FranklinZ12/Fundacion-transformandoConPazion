@@ -3,6 +3,7 @@ import 'styles/navbar/navbar.css';
 import NavbarResponsive from './NavbarResponsive';
 import logo from 'assets/TCP.webp';
 import LinkList from "./NavbarLinks";
+import CardLinks from './CardLinks';
 
 const Navbar = () => {
     return (
@@ -24,45 +25,28 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li tabIndex="0">
-                            <LinkList url='nosotros/organizacion/' title='NOSOTROS'
-                                icon='fa-solid fa-angle-down'
-                            />
+                            <NavLink to='nosotros/organizacion/'
+                                className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
+                            >
+                                NOSOTROS
+                                <i className="fa-solid fa-angle-down" />
+                            </NavLink>
                             <ul className="card card-compact p-2 bg-white shadow-md">
                                 <div className='w-[650px] grid grid-cols-2 gap-3'>
-                                    <li>
-                                        <NavLink to='/nosotros/organizacion/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Nuestra Organizacion</h3>
-                                                <p>Conozca nuestra escencia y un poco <br /> de nuestra historia.</p>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='nosotros/equipo/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Nuestro equipo</h3>
-                                                <p>Conozca nuestro equipo de trabajo<br /> todos entregados a la fundacion.</p>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='nosotros/voluntario-y-donacion/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Voluntario y donacion</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
+                                    <CardLinks url='nosotros/organizacion/' title='Nuestra Organizacion'
+                                        parrafo='Conozca nuestra escencia y un poco de nuestra historia.'
+                                    />
+                                    <CardLinks url='nosotros/equipo/' title='Nuestro equipo'
+                                        parrafo='Conozca nuestro equipo de trabajo todos entregados a la fundacion.'
+                                    />
+                                    <CardLinks url='nosotros/voluntario-y-donacion/'
+                                        title='Voluntario y donacion'
+                                    />
                                 </div>
                             </ul>
                         </li>
                         <li tabIndex="0">
-                            <NavLink to='/procesos/todos/'
+                            <NavLink to='procesos/todos/'
                                 className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
                             >
                                 PROCESOS
@@ -70,110 +54,24 @@ const Navbar = () => {
                             </NavLink>
                             <ul className="p-1 card card-compact bg-white shadow-md">
                                 <div className='w-[650px] grid grid-cols-2 gap-3'>
-                                    <li>
-                                        <NavLink to='/procesos/todos/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Nuestros procesos</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='procesos/medellin-barrista/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Medellin Barrista</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='procesos/club-deportivo-tcp/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Club deportivo TCP</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='procesos/es&su/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">ES&SU</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='procesos/jovemp'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Jovemp</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='procesos/liga-guayabal/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Liga Guayabal</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='procesos/torneo-barrial/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Torneo Barrial</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='procesos/a-g-a/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">A.G.A</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='procesos/nataural-woman/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Natural Woman</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='procesos/cronicas-y-pasion-deportiva/'
-                                            className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                                        >
-                                            <div className="card-body">
-                                                <h3 className="card-title">Cronicas y pasion deportiva</h3>
-                                            </div>
-                                        </NavLink>
-                                    </li>
+                                    <CardLinks url='procesos/todos/' title='Nuestros procesos' />
+                                    <CardLinks url='procesos/medellin-barrista/' title='Medellin Barrista' />
+                                    <CardLinks url='procesos/club-deportivo-tcp/' title='Club Deportivo TCP' />
+                                    <CardLinks url='procesos/es&su/' title='ES&SU' />
+                                    <CardLinks url='procesos/jovemp' title='Jovemp' />
+                                    <CardLinks url='procesos/liga-guayabal/' title='Liga Guayabal' />
+                                    <CardLinks url='procesos/torneo-barrial/' title='Torneo Barrial' />
+                                    <CardLinks url='procesos/a-g-a/' title='A.G.A' />
+                                    <CardLinks url='procesos/nataural-woman/' title='Natural Woman' />
+                                    <CardLinks url='procesos/cronicas-y-pasion-deportiva/' title='Cronicas y Pasion Deportiva' />
                                 </div>
                             </ul>
                         </li>
-                        <li>
-                            <NavLink to='/contacto'
-                                className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                            >
-                                CONTACTO
-                            </NavLink>
-                        </li>
+                        <LinkList url='/contacto' title='CONTACTO' />
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <NavLink to='auth/login' className="btn btn-outline btn-secondary">MI CUENTA</NavLink>
+                    <Link to='auth/login' className="btn btn-outline btn-secondary">MI CUENTA</Link>
                 </div>
             </nav>
         </header>
