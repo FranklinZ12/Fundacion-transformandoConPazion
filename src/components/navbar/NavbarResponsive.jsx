@@ -6,6 +6,7 @@ import { useState, useRef, useEffect } from "react";
 const NavbarResponsive = () => {
     const [open, setOpen] = useState(false);
     const wrapperRef = useRef(null);
+    
     useEffect(() => {
         function handleClickOutside(event) {
             if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {

@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import 'styles/navbar/navbar.css';
 import NavbarResponsive from './NavbarResponsive';
 import logo from 'assets/TCP.webp';
+import LinkList from "./NavbarLinks";
 
 const Navbar = () => {
     return (
@@ -23,12 +24,9 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li tabIndex="0">
-                            <NavLink to='nosotros/organizacion'
-                                className={({ isActive }) => `` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-                            >
-                                NOSOTROS
-                                <i className="fa-solid fa-angle-down" />
-                            </NavLink>
+                            <LinkList url='nosotros/organizacion/' title='NOSOTROS'
+                                icon='fa-solid fa-angle-down'
+                            />
                             <ul className="card card-compact p-2 bg-white shadow-md">
                                 <div className='w-[650px] grid grid-cols-2 gap-3'>
                                     <li>
