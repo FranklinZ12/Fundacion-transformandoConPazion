@@ -5,7 +5,7 @@ import HomeScreen from "../pages/HomeScreen";
 import AboutScreen from "../pages/about/AboutScreen";
 import ContactScreen from "../pages/ContactScreen";
 import ProcessScreen from "../pages/process/ProcessScreen";
-import Footer from "components/Footer";
+import Footer from "components/footer/Footer";
 import AboutTeam from "pages/about/AboutTeam";
 import AboutUsAndDonations from "pages/about/AboutUsAndDonations";
 import ProcessMedellinBarrista from "pages/process/ProcessMedellinBarrista";

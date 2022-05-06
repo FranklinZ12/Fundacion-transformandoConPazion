@@ -13,3 +13,4 @@
 :is(ul) a:hover {
     @apply text-[#872075] bg-transparent;
 }
+

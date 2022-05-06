@@ -1,0 +1,11 @@
+.footer{
+    @apply bottom-0 absolute align-baseline gap-y-8;
+}
+
+:is(a,p){
+    @apply font-semibold;
+}
+
+:is(i){
+    @apply text-2xl ;
+}

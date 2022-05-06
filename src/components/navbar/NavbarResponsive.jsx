@@ -20,14 +20,14 @@ const NavbarResponsive = () => {
         <div className="navbar-start justify-between">
             <div className="dropdown" ref={wrapperRef}>
                 <label
-                    onClick={() => setOpen(!open)}
                     tabIndex="0" className="btn btn-ghost lg:hidden"
+                    onClick={() => setOpen(!open)}
                 >
                     {
                         open ? (
-                            <i className="fa-solid fa-xmark w-5 h-5 text-lg" />
+                            <i className="fa-solid fa-xmark w-7 h-7 text-2xl" />
                         ) : (
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         )
