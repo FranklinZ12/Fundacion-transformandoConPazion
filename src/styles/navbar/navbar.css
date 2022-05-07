@@ -1,9 +1,9 @@
 .navbar-styles {
-    @apply fixed z-[4] h-28 w-full bg-white shadow-md top-0 left-0 right-0;
+    @apply fixed z-[4] h-28 w-full bg-white shadow-md p-0;
 }
 
 .brand{
-    @apply absolute h-full w-1/5 left-0 bottom-0 shadow-[6px_0_15px_-2px_#888] z-[1] rounded-r-[100px]
+    @apply  h-full w-1/5 shadow-[6px_0_15px_-2px_#888] z-[1] rounded-r-[100px]
     px-12  items-center justify-center;
 }
 

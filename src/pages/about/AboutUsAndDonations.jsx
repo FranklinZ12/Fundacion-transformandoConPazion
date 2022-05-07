@@ -1,8 +1,7 @@
-import React from 'react'
 
 const AboutUsAndDonations = () => {
   return (
-    <div>AboutUsAndDonations</div>
+    <div className='bg-blue-800 flex justify-center items-center'>AboutUsAndDonations</div>
   )
 }
 

@@ -1,5 +1,4 @@
-import React from 'react'
-import CardLinks from './CardLinks'
+import CardLinks from './CardLinks';
 
 const ListCardLinks = () => {
   return (
@@ -10,7 +9,7 @@ const ListCardLinks = () => {
           <CardLinks url='nosotros/equipo/' title='Nuestro equipo'
               parrafo='Conozca nuestro equipo de trabajo todos entregados a la fundacion.'
           />
-          <CardLinks url='nosotros/voluntario-y-donacion/'
+          <CardLinks url='nosotros/voluntario-y-donaciones/'
               title='Voluntario y donacion'
           />
       </div>
