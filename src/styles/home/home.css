@@ -1,0 +1,11 @@
+section {
+    @apply min-h-screen pt-28 pr-32 pl-32;
+}
+
+.datos{
+    @apply flex items-center justify-center;
+}
+
+.imagen{
+    @apply w-3/4 relative;
+}

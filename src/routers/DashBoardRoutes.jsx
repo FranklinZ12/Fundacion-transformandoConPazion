@@ -23,7 +23,7 @@ const DashBoardRoutes = () => {
     return (
         <Fragment>
             <Navbar />
-            <div>
+            <main>
                 <Routes>
                     <Route path="/" element={<HomeScreen />} />
                     <Route path="nosotros">
@@ -48,8 +48,8 @@ const DashBoardRoutes = () => {
                         <Route path="login" element={<LoginScreen />}/>
                     </Route>
                 </Routes>
-            </div>
-            <Footer />
+            </main>
+            {/* <Footer /> */}
             {/* <ByMy /> */}
         </Fragment>
     )
