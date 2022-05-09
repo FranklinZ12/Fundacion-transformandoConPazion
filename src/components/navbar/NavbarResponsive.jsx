@@ -42,7 +42,7 @@ const NavbarResponsive = () => {
                     aria-labelledby="nested-list-subheader"
                     subheader={
                         <ListSubheader component="div" id="nested-list-subheader">
-                            Transformando con pazion
+                            Transformando con pazión
                         </ListSubheader>
                     }
                     className={classes.root}
