@@ -1,7 +1,5 @@
 import { NavLink } from 'react-router-dom';
 
-//Hola 
-
 const CardLinks = ({ url, title, parrafo }) => {
   return (
     <li>

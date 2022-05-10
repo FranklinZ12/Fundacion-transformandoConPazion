@@ -7,10 +7,11 @@
     px-12  items-center justify-center;
 }
 
-:is(ul) a{
+a{
     @apply font-semibold;
 }
-:is(ul) a:hover {
+
+a:hover {
     @apply text-[#872075] bg-transparent;
 }
 

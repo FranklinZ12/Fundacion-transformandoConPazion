@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import { makeStyles } from '@material-ui/core/styles';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -8,17 +7,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
+import { useStyles } from 'helpers/stylesMUI';
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        width: '100%',
-        maxWidth: 360,
-        backgroundColor: theme.palette.background.paper,
-    },
-    nested: {
-        paddingLeft: theme.spacing(4),
-    },
-}));
 
 const NavbarResponsive = () => {
     const classes = useStyles();
@@ -33,7 +23,7 @@ const NavbarResponsive = () => {
     };
 
     return (
-        <div className="drawer-side">
+        <aside className="drawer-side">
             <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
             <ul className="menu p-4 overflow-y-auto w-60 bg-base-100">
                 {/* <!-- Sidebar content here --> */}
@@ -110,7 +100,7 @@ const NavbarResponsive = () => {
                     </ListItem>
                 </List>
             </ul>
-        </div>
+        </aside>
     )
 }
 
