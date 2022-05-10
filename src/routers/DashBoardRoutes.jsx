@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
-import Navbar from "../components/navbar/Navbar";
 import HomeScreen from "../pages/HomeScreen";
 import AboutScreen from "../pages/about/AboutScreen";
 import ContactScreen from "../pages/ContactScreen";
@@ -22,7 +21,6 @@ import LoginScreen from "pages/auth/LoginScreen";
 const DashBoardRoutes = () => {
     return (
         <Fragment>
-            <Navbar />
             <main>
                 <Routes>
                     <Route path="/" element={<HomeScreen />} />
