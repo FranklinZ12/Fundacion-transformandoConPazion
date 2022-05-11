@@ -1,11 +1,20 @@
+
 section {
-    @apply min-h-screen pt-28 pr-32 pl-32;
+    @apply min-h-screen pt-16;
 }
 
 .datos{
-    @apply flex items-center justify-center;
+    @apply w-full flex flex-col items-center justify-center;
 }
 
 .imagen{
-    @apply w-3/4 relative;
+    @apply image-full pb-2;
+}
+
+.color-text{
+    color:var(--morado)
+}
+
+h1 span{
+    color:var(--rojo);
 }
