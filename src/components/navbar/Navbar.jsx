@@ -6,6 +6,7 @@ import ListLinks from './ListLinks';
 import ListCardLinks from './ListCardLinks';
 import Logo from 'components/ui/Logo';
 import DashBoardRoutes from 'routers/DashBoardRoutes';
+import Footer from 'components/footer/Footer';
 
 const Navbar = () => {
     return (
@@ -14,7 +15,7 @@ const Navbar = () => {
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
                     {/* <!-- Navbar --> */}
-                    <div className="w-full navbar justify-between bg-base-100 navbar-styles">
+                    <header className="w-full navbar justify-between bg-base-100 navbar-styles">
                         <div className="flex-none lg:hidden">
                             <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -66,11 +67,12 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="mr-3">
-                            <Link to='auth/login' className="btn btn-outline btn-secondary">MI CUENTA</Link>
+                            <Link to='auth/login' className="btn btn-outline btn-secondary btn--login">MI CUENTA</Link>
                         </div>
-                    </div>
+                    </header>
                     {/* <!-- Page content here --> */}
                     <DashBoardRoutes />
+                    <Footer />
                 </div>
                 <NavbarResponsive />
             </nav>

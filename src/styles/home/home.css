@@ -17,4 +17,21 @@ section {
 
 h1 span{
     color:var(--rojo);
+    padding-left: 6px;
 }
+
+/* .social {
+    @apply mt-5 flex flex-wrap gap-4 pb-3
+}
+
+.social a {
+    border: 1.9px solid #727271;
+    color: #727271;
+    font-size: 1rem;
+    @apply w-8 h-8 rounded-full flex items-center justify-center
+}
+
+.social a:hover {
+    border: 1.9px solid #872075;
+    color: #872075;
+} */

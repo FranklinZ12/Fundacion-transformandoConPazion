@@ -1,10 +1,9 @@
 import { Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
-import HomeScreen from "../pages/HomeScreen";
+import HomeScreen from "../pages/home/HomeScreen";
 import AboutScreen from "../pages/about/AboutScreen";
 import ContactScreen from "../pages/ContactScreen";
 import ProcessScreen from "../pages/process/ProcessScreen";
-import Footer from "components/footer/Footer";
 import AboutTeam from "pages/about/AboutTeam";
 import AboutUsAndDonations from "pages/about/AboutUsAndDonations";
 import ProcessMedellinBarrista from "pages/process/ProcessMedellinBarrista";
@@ -47,7 +46,6 @@ const DashBoardRoutes = () => {
                     </Route>
                 </Routes>
             </main>
-            {/* <Footer /> */}
             {/* <ByMy /> */}
         </Fragment>
     )

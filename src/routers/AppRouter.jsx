@@ -2,7 +2,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { PublicRoute } from "./PublicRoute";
 import Navbar from "components/navbar/Navbar";
 import LoginScreen from "pages/auth/LoginScreen";
-import { PrivateRoute } from "./PrivateRoute";
+// import { PrivateRoute } from "./PrivateRoute";
 
 const AppRouter = () => {
     return (
