@@ -67,7 +67,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="mr-3">
-                            <Link to='auth/login' className="btn btn-outline btn-secondary btn--login">MI CUENTA</Link>
+                            <Link to='auth/login' className="btn btn-outline btn-secondary">MI CUENTA</Link>
                         </div>
                     </header>
                     {/* <!-- Page content here --> */}

@@ -1,3 +1,7 @@
+footer{
+    @apply mt-8;
+}
+
 .footer .link {
     @apply no-underline text-white;
 }

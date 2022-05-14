@@ -1,10 +1,12 @@
 import 'styles/home/home.css';
 import image from 'assets/ClubDeportivoTCP.png';
+import CardList from 'components/home/CardList';
+import ObjectList from 'components/home/ObjectList';
 
 const HomeScreen = () => {
   return (
     <section>
-      <figure className='datos'>
+      <figure className='datos pb-5'>
         <div className='imagen mt-14'>
           <img src={image} alt='imagen-fundacion' />
         </div>
@@ -18,11 +20,16 @@ const HomeScreen = () => {
           </figcaption>
         </div>
       </figure>
-      <div>
-        
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4'>
+        <CardList />
+        <div className='item sm:col-span-2'>
+          <h2 className='text-3xl font-bold my-2 color-text text-center'>OBJETIVOS</h2>
+          <p className='text-base opacity-100 text-gray-700'>
+           <ObjectList />
+          </p>
+        </div>
       </div>
     </section>
-    
   )
 }
 

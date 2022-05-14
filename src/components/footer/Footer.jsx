@@ -1,35 +1,11 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link} from "react-router-dom";
 import 'styles/footer/footer.css';
+import ListLinks from "./ListLinks";
 
 const Footer = () => {
   return (
     <footer className="footer footer-center p-4 bg-[#872075] text-base-300 rounded">
-      <div className="grid grid-flow-col gap-4">
-        <NavLink
-          to='/'
-          className="link"
-        >
-          INICIO
-        </NavLink>
-        <NavLink
-          to='nosotros/organizacion/'
-          className="link"
-        >
-          NOSOTROS
-        </NavLink>
-        <NavLink
-          to='procesos/todos/'
-          className="link"
-        >
-          PROCESOS
-        </NavLink>
-        <NavLink
-          to='/contacto'
-          className="link"
-        >
-          CONTACTO
-        </NavLink>
-      </div>
+      <ListLinks />
       <div>
         <div className="grid grid-flow-col gap-8">
           <Link to='https://www.instagram.com/fundacion_tcp/' target='_blank' rel="noreferrer">

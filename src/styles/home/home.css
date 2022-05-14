@@ -1,10 +1,9 @@
-
 section {
-    @apply min-h-screen pt-16;
+    @apply m-12 pt-16;
 }
 
 .datos{
-    @apply w-full flex flex-col items-center justify-center;
+    @apply  flex flex-col items-center justify-center;
 }
 
 .imagen{
@@ -20,18 +19,13 @@ h1 span{
     padding-left: 6px;
 }
 
-/* .social {
-    @apply mt-5 flex flex-wrap gap-4 pb-3
+.item ul{
+    @apply pl-5 list-disc;
+    color: var(--morado);
 }
 
-.social a {
-    border: 1.9px solid #727271;
-    color: #727271;
-    font-size: 1rem;
-    @apply w-8 h-8 rounded-full flex items-center justify-center
+.item ul li{
+    @apply mb-2;
 }
 
-.social a:hover {
-    border: 1.9px solid #872075;
-    color: #872075;
-} */
+
