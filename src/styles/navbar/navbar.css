@@ -2,16 +2,28 @@
     @apply fixed z-[4] h-28 w-full bg-white shadow-md p-0;
 }
 
-.brand{
-    @apply  h-full w-1/5 shadow-[6px_0_15px_-2px_#888] z-[1] rounded-r-[100px]
-    px-12  items-center justify-center;
+.brand {
+    @apply h-full w-1/5 shadow-[6px_0_15px_-2px_#888] z-[1] rounded-r-[100px] px-12 items-center justify-center;
 }
 
-a{
+.drawer .btn-outline{
+    color: var(--morado);
+    border-color: var(--morado);
+}
+
+.drawer .btn-secondary:hover{
+    background-color: var(--morado);
+    border-color: var(--morado);
+}
+
+.drawer .btn {
+    @apply font-semibold pb-0 mb-0 border-b-4;
+}
+
+.drawer a {
     @apply font-semibold;
 }
 
-a:hover {
+.drawer a:hover {
     @apply text-[#872075] bg-transparent;
 }
-

@@ -1,11 +1,31 @@
 section {
-    @apply min-h-screen pt-28 pr-32 pl-32;
+    @apply m-12 pt-16;
 }
 
 .datos{
-    @apply flex items-center justify-center;
+    @apply  flex flex-col items-center justify-center;
 }
 
 .imagen{
-    @apply w-3/4 relative;
+    @apply image-full pb-2;
 }
+
+.color-text{
+    color:var(--morado)
+}
+
+h1 span{
+    color:var(--rojo);
+    padding-left: 6px;
+}
+
+.item ul{
+    @apply pl-5 list-disc;
+    color: var(--morado);
+}
+
+.item ul li{
+    @apply mb-2;
+}
+
+

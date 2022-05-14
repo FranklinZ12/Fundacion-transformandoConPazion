@@ -1,11 +1,23 @@
-.footer{
-    @apply bottom-0 absolute align-baseline gap-y-8;
+footer{
+    @apply mt-8;
 }
 
-:is(a,p){
+.footer .link {
+    @apply no-underline text-white;
+}
+
+.footer .link:hover {
+    @apply text-white border-b-2 border-white ;
+}
+
+.footer a p {
     @apply font-semibold;
 }
 
-:is(i){
-    @apply text-2xl ;
+.footer i {
+    @apply text-2xl;
+}
+
+.footer i:hover {
+    @apply text-2xl text-white;
 }
