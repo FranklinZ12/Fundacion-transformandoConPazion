@@ -1,7 +1,19 @@
+.footer .link {
+    @apply no-underline text-white;
+}
+
+.footer .link:hover {
+    @apply text-white border-b-2 border-white ;
+}
+
 .footer a p {
     @apply font-semibold;
 }
 
 .footer i {
     @apply text-2xl;
+}
+
+.footer i:hover {
+    @apply text-2xl text-white;
 }

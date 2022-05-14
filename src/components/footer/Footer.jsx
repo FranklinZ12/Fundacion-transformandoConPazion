@@ -7,28 +7,25 @@ const Footer = () => {
       <div className="grid grid-flow-col gap-4">
         <NavLink
           to='/'
-          className={({ isActive }) => `link link-hover text-[#000000]` + (isActive ? ' text-[#000000] active' : '')}         
-
+          className="link"
         >
           INICIO
         </NavLink>
         <NavLink
           to='nosotros/organizacion/'
-          className={({ isActive }) => `link link-hover` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-
+          className="link"
         >
           NOSOTROS
         </NavLink>
         <NavLink
           to='procesos/todos/'
-          className={({ isActive }) => `link link-hover` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
-
+          className="link"
         >
           PROCESOS
         </NavLink>
         <NavLink
           to='/contacto'
-          className={({ isActive }) => `link link-hover` + (isActive ? ' text-[#872075] bg-transparent active' : '')}
+          className="link"
         >
           CONTACTO
         </NavLink>
