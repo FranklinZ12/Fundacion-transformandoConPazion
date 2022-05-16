@@ -2,8 +2,8 @@
     @apply mb-12 text-xl mt-0 opacity-100 text-gray-600;
 }
 
-.aboutScreen .card-About{
-    @apply items-center rounded border p-5 sm:flex-1;
+.aboutScreen .card_About{
+    @apply items-center p-5 sm:flex-1;
 }
 
 .aboutScreen .icon {
