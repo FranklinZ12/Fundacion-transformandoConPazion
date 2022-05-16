@@ -4,7 +4,7 @@
 
 :root {
   --rojo: #c3171c;
-  --morado:#5a297e;
+  --morado:#872075;
 }
 
 body {
@@ -19,4 +19,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+section {
+  @apply  mx-16 my-12;
 }
