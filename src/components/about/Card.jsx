@@ -1,19 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Card = ({ icon, title, text }) => {
     const [titles] = useState(
         ['Igualdad','Ciudadanía plena', 'Voluntad', 'Respeto']
     );
-    const [texto, setTexto] = useState('');
+    const [titulo, setTitulo] = useState(false);
 
-    titles.forEach(element => {
-        if (element === text) {
-             setTexto(element);
-        }
-    });
+    useEffect(() => {
+        titles.forEach(element => {
+            if (element === title) {
+                setTitulo(true);
+            }
+        });
+    }, [title, titles]);
 
     return (
-        <div className={(texto ? 'card_About' : 'card_About rounded border')}>
+        <div className={(titulo ? 'card_About' : 'card_About rounded border')}>
             <figure className='text-left'>
                 <div className='icon'>
                     <i className={`${icon} icon-style`} role='img' title='paloma' />

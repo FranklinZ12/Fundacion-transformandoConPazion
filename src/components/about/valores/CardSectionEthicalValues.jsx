@@ -1,4 +1,4 @@
-import CardListEthicalValues from './CardListPrincipal';
+import CardListEthicalValues from './CardListEthicalValues';
 
 const CardSectionEthicalValues = ({title, parrafo}) => {
   return (
