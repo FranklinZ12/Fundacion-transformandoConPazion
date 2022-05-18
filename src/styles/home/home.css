@@ -1,9 +1,5 @@
-section {
-    @apply m-12 pt-16;
-}
-
 .datos{
-    @apply  flex flex-col items-center justify-center;
+    @apply h-screen flex flex-col items-center justify-center;
 }
 
 .imagen{
@@ -27,5 +23,3 @@ h1 span{
 .item ul li{
     @apply mb-2;
 }
-
-

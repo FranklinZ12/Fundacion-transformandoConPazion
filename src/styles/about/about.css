@@ -1,0 +1,26 @@
+.aboutScreen p {
+    @apply mb-12 text-xl mt-0 opacity-100 text-gray-600;
+}
+
+.aboutScreen .card_About{
+    @apply items-center p-5 sm:flex-1;
+}
+
+.aboutScreen .icon {
+    @apply w-14 h-14 items-center justify-center inline-flex
+     bg-gray-100 rounded-full;
+}
+
+.aboutScreen .icon-style {
+    @apply text-2xl;
+    color: var(--morado);
+}
+
+.aboutScreen  figcaption > h3{
+    @apply text-xl;
+    color: var(--morado);
+}
+
+.aboutScreen figcaption > h4{
+    @apply text-base font-normal text-gray-600 opacity-100;
+}
