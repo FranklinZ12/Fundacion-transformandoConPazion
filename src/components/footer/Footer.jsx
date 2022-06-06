@@ -1,4 +1,3 @@
-import { Link} from "react-router-dom";
 import 'styles/footer/footer.css';
 import ListLinks from "./ListLinks";
 
@@ -8,15 +7,15 @@ const Footer = () => {
       <ListLinks />
       <div>
         <div className="grid grid-flow-col gap-8">
-          <Link to='https://www.instagram.com/fundacion_tcp/' target='_blank' rel="noreferrer">
+          <a href="https://www.instagram.com/fundacion_tcp/" target='_blank' rel="noreferrer">
             <i className="fa-brands fa-instagram" />
-          </Link>
-          <Link to='https://www.facebook.com/transformando.con.pazionn' target='_blank' rel="noreferrer">
+          </a>
+          <a href="https://www.facebook.com/transformando.con.pazionn/" target='_blank' rel="noreferrer">
             <i className="fa-brands fa-facebook-f" />
-          </Link>
-          <Link to='https://twitter.com/FundacionTCP' target='_blank' rel="noreferrer">
+          </a>
+          <a href="https://twitter.com/FundacionTCP/" target='_blank' rel="noreferrer">
             <i className="fa-brands fa-twitter" />
-          </Link>
+          </a>
         </div>
       </div>
       <div>
