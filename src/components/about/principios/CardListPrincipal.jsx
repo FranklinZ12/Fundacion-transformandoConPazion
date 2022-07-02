@@ -1,22 +1,9 @@
-import Card from "../Card";
 import { principios } from "helpers/principios";
+import CardList from "../CardList";
 
 const CardListPrincipal = () => {
     return (
-        <div className='w-full flex flex-wrap gap-6'>
-            {
-                principios.map((item, index) => {
-                    return (
-                        <Card
-                            key={index}
-                            icon={item.icon}
-                            title={item.title}
-                            text={item.text}
-                        />
-                    )
-                })
-            }
-        </div>
+        <CardList tipo={principios} />
     )
 }
 

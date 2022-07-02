@@ -4,6 +4,8 @@ import 'styles/about/about.css';
 import { Fragment } from 'react';
 import QuienesSomos from 'components/about/nosotros/QuienesSomos';
 import Reseña from 'components/about/reseña/Reseña';
+import CardSectionLogo from 'components/about/logotipo/CardSectionLogo';
+
 
 const AboutScreen = () => {
   return (
@@ -29,6 +31,9 @@ const AboutScreen = () => {
         <CardSectionEthicalValues
           title='Nuestros Valores'
           parrafo='Nuestros valores como fundación.'
+        />
+        <CardSectionLogo
+        title='Nuestro Logotipo'
         />
       </section>
     </Fragment>

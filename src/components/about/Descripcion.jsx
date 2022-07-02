@@ -3,10 +3,10 @@ import React, { Fragment } from 'react'
 const Descripcion = ({ title, parrafo }) => {
     return (
         <Fragment>
-            <span className="text-[18px] mb-[4em] font-bold uppercase tracking-[5px] leading-[1.8] relative text-gray-800">
+            <span className="title_Descripcion">
                 {title}
             </span>
-            <p>{parrafo}</p>
+            <p align="left">{parrafo}</p>
         </Fragment>
     )
 }
