@@ -24,9 +24,9 @@ const HomeScreen = () => {
         <CardList />
         <div className='item sm:col-span-2'>
           <h2 className='text-3xl font-bold my-2 color-text text-center'>OBJETIVOS</h2>
-          <p className='text-base opacity-100 text-gray-700'>
+          <div className='text-base opacity-100 text-gray-700'>
            <ObjectList />
-          </p>
+          </div>
         </div>
       </div>
     </section>
