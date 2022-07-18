@@ -5,32 +5,25 @@ import { Fragment } from 'react';
 import QuienesSomos from 'components/about/nosotros/QuienesSomos';
 import Reseña from 'components/about/reseña/Reseña';
 import CardSectionLogo from 'components/about/logotipo/CardSectionLogo';
+import Titulo from 'components/ui/Titulo';
+import Curva from 'components/ui/Curva';
 
 
 const AboutScreen = () => {
   return (
     <Fragment>
-      <div className='section_curva'>
-        <svg className='curva' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#fff" fillOpacity="1" d="M0,224L40,234.7C80,245,160,267,240,266.7C320,267,400,245,480,224C560,203,640,181,720,186.7C800,192,880,224,960,240C1040,256,1120,256,1200,240C1280,224,1360,192,1400,176L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z" />
-        </svg>
-      </div>
+      <Curva />
       <section className='aboutScreen'>
-        <div className='h-screen'>
-          <div className='w-full h-2/3 flex flex-col items-center justify-center md:h-1/2'>
-            <h1 className='font-semibold text-5xl mt-0 pt-0 mb-6 text-center text-black uppercase'>Nuestra Organización</h1>
-            <p className='text-center'>Una historia hecha con pasión</p>
-          </div>
-        </div>
+        <Titulo title='Nuestra Organización' parrafo='Una historia hecha con pasión' />
         <QuienesSomos />
         <Reseña />
         <CardSectionPrincipals
           title='Principios Corporativos'
-          parrafo='Nuestros principios como fundación.'
+          parrafo='Nuestros principios como fundación'
         />
         <CardSectionEthicalValues
           title='Nuestros Valores'
-          parrafo='Nuestros valores como fundación.'
+          parrafo='Nuestros valores como fundación'
         />
         <CardSectionLogo
         title='Nuestro Logotipo'

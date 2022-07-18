@@ -6,8 +6,8 @@ import ObjectList from 'components/home/ObjectList';
 const HomeScreen = () => {
   return (
     <section>
-      <figure className='datos pb-5'>
-        <div className='imagen mt-14'>
+      <figure className='datos pb-28 lg:pb-20'>
+        <div className='imagen mt-0'>
           <img src={image} alt='imagen-fundacion' />
         </div>
         <div>

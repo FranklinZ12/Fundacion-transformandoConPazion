@@ -33,11 +33,11 @@
 }
 
 .section_curva{
-    @apply  bg-[#872075] w-full m-0 p-0;
+    @apply  bg-[#872075] w-full;
 }
 
 .curva{
-    @apply mt-[110px] w-full md:mt-[60px] lg:m-0 p-0;
+    @apply mt-[110px] w-full md:mt-[60px];
 }
 
 .card_About ol {
