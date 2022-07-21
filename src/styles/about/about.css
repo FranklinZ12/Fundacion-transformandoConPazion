@@ -1,6 +1,3 @@
-.aboutScreen{
-    @apply mt-0 pt-0
-}
 .aboutScreen p {
     @apply mb-12 text-xl mt-0 text-gray-700;
 }
@@ -32,12 +29,33 @@
     @apply text-base font-normal text-gray-600 opacity-100;
 }
 
-.section_curva{
-    @apply  bg-[#872075] w-full;
+.wave {
+    @apply mt-[110px];
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-.curva{
-    @apply mt-[110px] w-full md:mt-[60px];
+.wave svg {
+    display: block;
+    width: calc(113% + 1.3px);
+    height: 197px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: #872075;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .wave svg {
+        width: calc(100% + 1.3px);
+        height: 133px;
+    }
 }
 
 .card_About ol {
